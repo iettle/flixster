@@ -30,7 +30,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JrP-yR-ogg">
-                                                    <rect key="frame" x="20" y="21" width="105" height="145"/>
+                                                    <rect key="frame" x="20" y="21" width="107" height="147"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="JrP-yR-ogg" secondAttribute="height" multiplier="107:147" id="3qD-uE-mTL"/>
                                                         <constraint firstAttribute="width" constant="107" id="XhK-Jv-VCA"/>
@@ -38,7 +38,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEs-fx-Jjx">
-                                                    <rect key="frame" x="149" y="21" width="205" height="26.5"/>
+                                                    <rect key="frame" x="151" y="21" width="209" height="27"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="CEs-fx-Jjx" secondAttribute="height" multiplier="209:27" id="hsf-nr-rot"/>
                                                         <constraint firstAttribute="width" secondItem="CEs-fx-Jjx" secondAttribute="height" multiplier="57:26" constant="149.80769230769229" id="qnj-Wc-WgJ"/>
@@ -48,7 +48,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yb-Ke-n5F">
-                                                    <rect key="frame" x="149" y="50" width="197" height="116"/>
+                                                    <rect key="frame" x="151" y="50.5" width="200" height="117.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="3yb-Ke-n5F" secondAttribute="height" multiplier="201:118" id="HVw-lv-Zx0"/>
                                                     </constraints>
@@ -75,6 +75,7 @@
                                             <outlet property="posterView" destination="JrP-yR-ogg" id="8w0-Fj-bt7"/>
                                             <outlet property="synopsisLabel" destination="3yb-Ke-n5F" id="irD-UG-6qg"/>
                                             <outlet property="titleLabel" destination="CEs-fx-Jjx" id="Csg-PV-p4J"/>
+                                            <segue destination="Kpc-Mv-M0d" kind="show" id="n9D-EA-ZuC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -97,6 +98,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="852" y="94.002998500749626"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="ssk-UH-cpZ">
+            <objects>
+                <viewController id="Kpc-Mv-M0d" customClass="MovieDetailsViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNZ-hO-L0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Wua-UN-0gE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hY-c6-U3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1644" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Idy-lU-Ldc">
